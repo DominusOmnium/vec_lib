@@ -1,9 +1,8 @@
-NAME = vec_lib.a
+NAME = lib/vec_lib.a
 
 SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = obj/
-LIBDIR = lib/
 
 SRCS =	vec_base.c \
 		vec_base1.c \
@@ -22,11 +21,12 @@ $(OBJDIR)%.o:$(SRCDIR)%.c
 	$(CC) -I $(INCDIR) $(CFLAGS) -o $@ -c $<
 
 $(NAME): obj $(OBJS)
-	ar rc $(addprefix $(LIBDIR), $(NAME)) $(OBJS)
-	ranlib $(addprefix $(LIBDIR), $(NAME))
+	ar rc $(NAME) $(OBJS)
+	ranlib $(NAME)
 
 clean:
 	rm -rf $(OBJS)
+	rm -rf $(OBJDIR)
 
 fclean: clean
 	rm -rf $(NAME)
