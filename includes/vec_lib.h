@@ -28,4 +28,5 @@ t_vec3_double	vec3d_mul_d(t_vec3_double v, double d);
 double			vec3i_scalar(t_vec3_int v1, t_vec3_int v2);
 double			vec3d_scalar(t_vec3_double v1, t_vec3_double v2);
 t_vec3_double	vec3d_cross(t_vec3_double v1, t_vec3_double v2);
+//
 #endif
