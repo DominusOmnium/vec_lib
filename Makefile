@@ -10,7 +10,7 @@ SRCS =	vec_base.c \
 
 OBJS = $(addprefix $(OBJDIR), $(SRCS:.c=.o))
 
-CC = gcc
+CC = gcc -g
 
 all: $(NAME)
 
