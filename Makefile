@@ -4,13 +4,17 @@ SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = obj/
 
-SRCS =	vec_base.c \
-		vec_base1.c \
-		vec_base2.c
+SRCS =	vec_add.c \
+		vec_cross.c \
+		vec_mod.c \
+		vec_mul.c \
+		vec_mul_n.c \
+		vec_scalar.c \
+		vec_sub.c
 
 OBJS = $(addprefix $(OBJDIR), $(SRCS:.c=.o))
 
-CC = gcc -g
+CC = gcc -g -Wall -Wextra -Werror
 
 all: $(NAME)
 
