@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vec_mul_n.c                                        :+:      :+:    :+:   */
+/*   vec3_mul_n.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dkathlee <dkathlee@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/05 15:06:32 by dkathlee          #+#    #+#             */
-/*   Updated: 2020/08/05 15:14:51 by dkathlee         ###   ########.fr       */
+/*   Updated: 2020/08/18 08:14:47 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vec_lib.h"
 
-t_ivec3		ivec3_mul_d(t_ivec3 v, float d)
+t_ivec3		ivec3_mul_f(t_ivec3 v, float d)
 {
 	return ((t_ivec3){(int)(v.x * d), (int)(v.y * d), (int)(v.z * d)});
 }

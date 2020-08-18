@@ -4,13 +4,20 @@ SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = obj/
 
-SRCS =	vec_add.c \
-		vec_cross.c \
-		vec_mod.c \
-		vec_mul.c \
-		vec_mul_n.c \
-		vec_scalar.c \
-		vec_sub.c
+SRCS =	vec3_add.c \
+		vec3_cross.c \
+		vec3_mod.c \
+		vec3_mul.c \
+		vec3_mul_n.c \
+		vec3_scalar.c \
+		vec3_sub.c \
+		vec4_add.c \
+		vec4_cross.c \
+		vec4_mod.c \
+		vec4_mul.c \
+		vec4_mul_n.c \
+		vec4_scalar.c \
+		vec4_sub.c
 
 OBJS = $(addprefix $(OBJDIR), $(SRCS:.c=.o))
 
