@@ -3,6 +3,7 @@ NAME = lib/vec_lib.a
 SRCDIR = srcs/
 INCDIR = includes/
 OBJDIR = obj/
+LIBDIR = lib/
 
 SRCS =	vec3_add.c \
 		vec3_cross.c \
@@ -32,6 +33,7 @@ $(OBJDIR)%.o:$(SRCDIR)%.c
 	$(CC) -I $(INCDIR) $(CFLAGS) -o $@ -c $<
 
 $(NAME): obj $(OBJS)
+	mkdir -p $(LIBDIR)
 	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 

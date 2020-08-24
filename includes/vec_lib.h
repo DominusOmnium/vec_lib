@@ -72,7 +72,7 @@ t_dvec4			dvec4_mul_dvec4(t_dvec4 v1, t_dvec4 v2);
 t_vec4			vec4_mul_vec4(t_vec4 v1, t_vec4 v2);
 t_ivec3			ivec3_mul_f(t_ivec3 v, float d);
 t_dvec3			dvec3_mul_d(t_dvec3 v, double d);
-t_vec3			vec_mul_f(t_vec3 v, float d);
+t_vec3			vec3_mul_f(t_vec3 v, float d);
 t_ivec4			ivec4_mul_f(t_ivec4 v, float d);
 t_dvec4			dvec4_mul_d(t_dvec4 v, double d);
 t_vec4			vec4_mul_f(t_vec4 v, float d);
