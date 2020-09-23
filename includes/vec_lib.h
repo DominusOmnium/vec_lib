@@ -1,50 +1,62 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   vec_lib.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dkathlee <dkathlee@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/09/11 15:25:15 by dkathlee          #+#    #+#             */
+/*   Updated: 2020/09/11 15:25:30 by dkathlee         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef VEC_LIB_H
 # define VEC_LIB_H
 # include <math.h>
 # include <stdint.h>
 
-typedef struct  s_ivec3
+typedef struct	s_ivec3
 {
-    int32_t		x;
-    int32_t		y;
-    int32_t		z;
-}               t_ivec3;
-typedef struct  s_dvec3
+	int32_t		x;
+	int32_t		y;
+	int32_t		z;
+}				t_ivec3;
+typedef struct	s_dvec3
 {
-    double		x;
-    double		y;
-    double		z;
-}               t_dvec3;
+	double		x;
+	double		y;
+	double		z;
+}				t_dvec3;
 
-typedef struct  s_vec3
+typedef struct	s_vec3
 {
-    float		x;
-    float		y;
-    float		z;
-}               t_vec3;
+	float		x;
+	float		y;
+	float		z;
+}				t_vec3;
 
-typedef struct  s_ivec4
+typedef struct	s_ivec4
 {
-    int32_t		x;
-    int32_t		y;
-    int32_t		z;
-    int32_t		w;
-}               t_ivec4;
+	int32_t		x;
+	int32_t		y;
+	int32_t		z;
+	int32_t		w;
+}				t_ivec4;
 
-typedef struct  s_dvec4
+typedef struct	s_dvec4
 {
-    float		x;
-    float		y;
-    float		z;
-    float		w;
-}               t_dvec4;
-typedef struct  s_vec4
+	float		x;
+	float		y;
+	float		z;
+	float		w;
+}				t_dvec4;
+typedef struct	s_vec4
 {
-    float		x;
-    float		y;
-    float		z;
-    float		w;
-}               t_vec4;
+	float		x;
+	float		y;
+	float		z;
+	float		w;
+}				t_vec4;
 
 float			ivec3_mod(t_ivec3 v);
 double			dvec3_mod(t_dvec3 v);

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   vec4_mul_n.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: dkathlee <dkathlee@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/18 08:22:38 by marvin            #+#    #+#             */
-/*   Updated: 2020/08/18 08:22:40 by marvin           ###   ########.fr       */
+/*   Updated: 2020/09/11 15:23:31 by dkathlee         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vec_lib.h"
 
-t_ivec4		ivec4_mul_f(t_ivec4 v, float d)
+t_ivec4	ivec4_mul_f(t_ivec4 v, float d)
 {
 	return ((t_ivec4){(int)(v.x * d), (int)(v.y * d),
 						(int)(v.z * d), (int)(v.w * d)});
