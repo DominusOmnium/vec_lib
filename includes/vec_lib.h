@@ -15,12 +15,31 @@
 # include <math.h>
 # include <stdint.h>
 
+typedef struct	s_ivec2
+{
+	int32_t		x;
+	int32_t		y;
+}				t_ivec2;
+
+typedef struct	s_dvec2
+{
+	double		x;
+	double		y;
+}				t_dvec2;
+
+typedef struct	s_vec2
+{
+	float		x;
+	float		y;
+}				t_vec2;
+
 typedef struct	s_ivec3
 {
 	int32_t		x;
 	int32_t		y;
 	int32_t		z;
 }				t_ivec3;
+
 typedef struct	s_dvec3
 {
 	double		x;
